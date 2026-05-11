@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["...", "chromium", "noto-fonts", "noto-fonts-emoji"]
+
+[phases.install]
+cmds = ["npm install"]
+
+[start]
+cmd = "node server.js"
